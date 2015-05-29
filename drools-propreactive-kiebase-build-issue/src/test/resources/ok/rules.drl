@@ -1,0 +1,10 @@
+package org.jboss.ddoyle.drools.propertyreactive;
+
+import org.jboss.ddoyle.drools.propreactive.model.Event1;
+
+rule "rule_1"
+    when
+       Event1() @watch(*, !code)
+    then
+       System.out.println("Rule fired.");
+end

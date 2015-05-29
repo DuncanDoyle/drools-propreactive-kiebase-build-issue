@@ -1,0 +1,10 @@
+package org.jboss.ddoyle.drools.propertyreactive;
+
+import org.jboss.ddoyle.drools.propreactive.model.Event1;
+
+declare Event1
+    @role( event )
+    @timestamp( timestamp )
+    @expires( 2d )
+    @propertyReactive
+end
